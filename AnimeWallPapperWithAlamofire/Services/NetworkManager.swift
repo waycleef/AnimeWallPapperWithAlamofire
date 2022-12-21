@@ -8,8 +8,24 @@
 import Foundation
 import Alamofire
 
+// included_tags maid, waifu, marin-kitagawa, mori-calliope, raiden-shigun, oppai, selfies, uniform
+// ass, hentai, milf, oral, paizuri, ecchi, ero
 enum Links: String {
-    case animeUrl = "https://api.waifu.im/search/?included_tags=selfies"
+    case animeUrl = "https://api.waifu.im/search/?"
+    case maid = "&included_tags=maid"
+    case waifu = "&included_tags=waifu"
+    case marinkitagawa = "&included_tags=marin-kitagawa"
+    case moricalliope = "&included_tags=mori-calliope"
+    case raidenshigun = "&included_tags=raiden-shigun"
+    case oppai = "&included_tags=oppai"
+    case selfies = "&included_tags=selfies"
+    case uniform = "&included_tags=uniform"
+    case ass = "&included_tags=ass"
+    case hentai = "&included_tags=hentai"
+    case milf = "&included_tags=milf"
+    case oral = "&included_tags=oral"
+    case paizuri = "&included_tags=paizuri"
+    case ecchi = "&included_tags=ero"
 }
 
 class NetworkManager {

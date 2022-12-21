@@ -12,6 +12,9 @@ class ImageAndInfoImageViewController: UIViewController {
     @IBOutlet var animeImage: UIImageView!
     @IBOutlet var animeInfoLabel: UILabel!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
+    var links: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator.startAnimating()
@@ -34,7 +37,7 @@ class ImageAndInfoImageViewController: UIViewController {
     }
     
     private func getAnimeWallPapper(completion: @escaping(AnimeImage) -> Void) {
-        NetworkManager.shared.fetchInfo(from: Links.animeUrl.rawValue) { [weak self] result in
+        NetworkManager.shared.fetchInfo(from: links) { [weak self] result in
             switch result {
             case .success(let animeInfo):
                 guard let animeImage = animeInfo.first else { return }
