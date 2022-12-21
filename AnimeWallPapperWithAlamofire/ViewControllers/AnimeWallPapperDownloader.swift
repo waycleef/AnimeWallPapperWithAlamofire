@@ -38,24 +38,6 @@ class AnimeWallPapperDownloader: UIViewController {
         }
     }
     
-    @IBAction func thirdSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            linkForWallPapper += Links.marinkitagawa.rawValue
-        }
-    }
-    
-    @IBAction func fourthSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            linkForWallPapper += Links.moricalliope.rawValue
-        }
-    }
-    
-    @IBAction func fifthSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            linkForWallPapper += Links.raidenshigun.rawValue
-        }
-    }
-    
     @IBAction func sixthSwitch(_ sender: UISwitch) {
         if sender.isOn {
             linkForWallPapper += Links.oppai.rawValue
